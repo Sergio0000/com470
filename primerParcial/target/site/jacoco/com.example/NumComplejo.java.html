@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>NumComplejo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">basic</a> &gt; <a href="index.source.html" class="el_package">com.example</a> &gt; <span class="el_source">NumComplejo.java</span></div><h1>NumComplejo.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.example;
+
+/**
+ *
+ * @author Hp
+ */
+public class NumComplejo {
+    private int _parteReal;
+    private int _parteImaginaria;
+
+<span class="fc" id="L16">    public NumComplejo(int _parteReal,int _parteImaginaria) {</span>
+<span class="fc" id="L17">        this._parteReal = _parteReal;</span>
+<span class="fc" id="L18">        this._parteImaginaria = _parteImaginaria;</span>
+<span class="fc" id="L19">    }</span>
+
+    public int getParteReal() {
+<span class="fc" id="L22">        return _parteReal;</span>
+    }
+
+    public int getParteImaginaria() {
+<span class="fc" id="L26">        return _parteImaginaria;</span>
+    }
+    public NumComplejo sumar(NumComplejo c){
+<span class="fc" id="L29">    return new NumComplejo(this.getParteReal()+c.getParteReal(),this.getParteImaginaria()+c.getParteImaginaria());</span>
+      
+    }
+    public NumComplejo restar(NumComplejo c){
+<span class="fc" id="L33">    return new NumComplejo(this.getParteReal()-c.getParteReal(),this.getParteImaginaria()-c.getParteImaginaria());</span>
+      
+    }
+   
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
